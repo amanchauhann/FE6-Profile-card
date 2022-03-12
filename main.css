@@ -1,0 +1,124 @@
+:root{
+    --bg-color: hsl(185, 75%, 39%);
+    --d-gray: hsl(0, 0%, 59%);
+    --d-blue: hsl(229, 23%, 23%);
+    --gish-blue: hsl(227, 10%, 46%);
+    --m-font: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: top -500px left -50%, bottom -500px right -50%;
+    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card{
+    /* border: 1px solid red; */
+    background-color: white;
+    min-width: 22%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.bg-container{
+    /* border: 3px solid black; */
+    min-height: 45%;
+    /* background-color: yellow; */
+    /* background: url('./images/bg-pattern-card.svg'); */
+    object-fit:fill;
+}
+
+.bg-container>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.profileImg>img{
+    /* display: inline; */
+    /* min-height: fit-content; */
+    border: 6px solid white;
+    border-radius: 50%;
+    /* position: relative; */
+    transform: translateY(-70%);
+    margin: 0 8rem;
+    max-height: min-content;
+}
+
+.profileImg{
+    margin-bottom: 0rem;
+    max-height: 2rem;
+}
+
+.detail-container{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.npContainer{
+    /* border: 1px solid brown; */
+}
+
+.npContainer>.name{
+    color: var(--d-blue);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.npContainer>.place{
+    color: var(--gish-blue);
+    font-weight: 400;
+}
+
+.ageContainer{
+    /* border: 2px solid green; */
+    color: var(--gish-blue);
+    font-weight: 400;
+}
+
+.footer{
+    /* padding-top: 1.5rem; */
+    padding-bottom: 2rem;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.stat-detail{
+    /* border-top: 1px solid black; */
+    max-width: min-content;
+    text-align: center;
+}
+
+.value{
+    color: hsl(229deg 47% 13%);
+    font-weight: 700;
+}
+
+.description{
+    color: var(--gish-blue);
+    font-weight: 400;
+}
